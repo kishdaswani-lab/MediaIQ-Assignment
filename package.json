@@ -1,0 +1,32 @@
+{
+  "name": "mediaiq-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "node --import ./src/server/evidence/register-test-hook.mjs --experimental-strip-types --test src/server/auth/policy.test.ts src/server/auth/audit-signature.test.ts src/server/evidence/evidence.test.ts src/server/mia/engine.test.ts src/server/mia/selection.test.ts src/server/mia/provider.test.ts src/server/mia/provider-transport.test.ts src/server/mia/mia.test.ts src/components/reservations/reservation-release.test.ts"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.119.0",
+    "next": "16.4.6",
+    "postgres": "^4.1.1",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/turbopack": "4.3.3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.6",
+    "supabase": "^3.2.0",
+    "tailwindcss": "4.3.3",
+    "typescript": "^5"
+  }
+}
